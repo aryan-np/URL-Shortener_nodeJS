@@ -24,7 +24,7 @@ app.get("/:shortId",async(req,res)=>{
     return res.redirect(entry.originalLink)
 })
 
-connectMongoDB("mongodb+srv://aryan:HBEowRkoUIZEWinF@aryan.kivoyia.mongodb.net/urlDb")
+connectMongoDB("mongodb+srv://&lt;username&gt;:&lt;password&gt;@&lt;cluster-url&gt;/urlDb")
 .then(()=>console.log("connection Successful"))
 .catch(()=>console.log("Faced some error during connection to mongo db"))
 
